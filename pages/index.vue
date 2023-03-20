@@ -17,20 +17,23 @@ useHead({
   <section class="bg-[url('/img/forest.jpg')]
     bg-fixed bg-center bg-cover">
     <div class="bg-black/50 pt-32 md:pt-36 pb-12 px-8 md:px-16">
-      <div class="max-w-2xl">
-        <h1 class="text-5xl md:text-7xl leading-tight text-white">
-          Democratizing access to carbon markets.
-        </h1>
-      </div>
-      <div class="mt-8 ml-auto max-w-2xl rounded-md bg-black/60 px-4 py-6">
-        <p class="text-lg text-white">
-          Fairatmos is a carbon technology platform, enabling communities as project developers to develop carbon sequestration projects and companies to finance or offset.
-        </p>
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl md:text-7xl leading-tight text-white">
+            Democratizing access to carbon markets.
+          </h1>
+        </div>
+        
+        <div class="mt-8 ml-auto max-w-2xl rounded-md bg-black/60 px-4 py-6">
+          <p class="text-lg text-white">
+            Fairatmos is a carbon technology platform, enabling communities as project developers to develop carbon sequestration projects and companies to finance or offset.
+          </p>
 
-        <div class="mt-6 flex flex-col md:flex-row
-          space-y-4 md:space-y-0 md:space-x-4">
-          <ALink class="flex-1">I am a community or asset owner</ALink>
-          <ALink class="flex-1">I am a business or buyer</ALink>
+          <div class="mt-6 flex flex-col md:flex-row
+            space-y-4 md:space-y-0 md:space-x-4">
+            <ALink class="flex-1">I am a community or asset owner</ALink>
+            <ALink class="flex-1">I am a business or buyer</ALink>
+          </div>
         </div>
       </div>
     </div>
@@ -104,7 +107,8 @@ useHead({
 
       <ConsultOverlay
         :consults="consults"
-        class="static md:absolute md:w-[45%] lg:w-[36%] md:top-0 md:left-1/2" />
+        class="static md:absolute md:w-[45%] lg:w-[36%] xl:w-[28%]
+        md:top-0 md:left-1/2" />
     </div>
   </section>
 

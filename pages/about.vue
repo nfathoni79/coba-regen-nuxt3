@@ -60,18 +60,20 @@ useHead({
           </div>
         </div>
 
-        <div class="-mt-16 md:mt-0 mx-auto md:ml-auto md:mr-24 lg:mr-48
-          md:max-w-sm px-8">
-          <h1 class="text-4xl md:text-5xl font-semibold text-teal-600">
-            Our Mission
-          </h1>
+        <div class="mx-auto max-w-7xl">
+          <div class="-mt-16 md:mt-0 md:ml-auto
+            md:max-w-md lg:max-w-lg xl:max-w-xl px-8">
+            <h1 class="text-4xl md:text-5xl font-semibold text-teal-600">
+              Our Mission
+            </h1>
 
-          <p class="mt-8 text-gray-700">
-            Developing a Green House Gasses (GHG) sequestration project and getting fairly rewarded was hard, but not anymore. With our technology and platform, we want to give equal access to everyone to take a part as Project developers, Experts or Supporters.
-          </p>
+            <p class="mt-8 text-gray-700">
+              Developing a Green House Gasses (GHG) sequestration project and getting fairly rewarded was hard, but not anymore. With our technology and platform, we want to give equal access to everyone to take a part as Project developers, Experts or Supporters.
+            </p>
 
-          <div class="text-center md:text-left">
-            <ALink type="round" class="mt-8">See More</ALink>
+            <div class="text-center md:text-left">
+              <ALink type="round" class="mt-8">See More</ALink>
+            </div>
           </div>
         </div>
       </div>
