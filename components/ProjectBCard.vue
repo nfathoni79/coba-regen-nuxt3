@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps({
+  slug: String,
   image: String,
   title: String,
   description: String,
@@ -23,7 +24,10 @@ const props = defineProps({
     </div>
 
     <div class="px-6 pb-8 text-center">
-      <ALink type="round">See more</ALink>
+      <ANuxtLink :to="{ name: 'projects-slug', params: { slug: slug } }"
+        type="round">
+        See more
+      </ANuxtLink>
     </div>
   </div>
 </template>

@@ -76,6 +76,7 @@ useHead({
       <div class="mt-12 flex flex-col md:flex-row
         space-y-4 md:space-y-0 md:space-x-6">
         <ProjectCard v-for="(project, index) in projects" :key="index"
+          :slug="project.slug"
           :image="project.image"
           :title="project.title"
           :description="project.description"
@@ -83,7 +84,9 @@ useHead({
       </div>
 
       <div class="mt-12 text-center">
-        <ALink class="px-8 py-2">EXPLORE MORE</ALink>
+        <ANuxtLink :to="{ name: 'projects' }" class="px-8 py-2">
+          EXPLORE MORE
+        </ANuxtLink>
       </div>
     </div>
   </section>

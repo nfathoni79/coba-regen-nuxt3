@@ -26,10 +26,14 @@ onUnmounted(() => {
 })
 
 watch(scrollY, (newScrollY, oldScrollY) => {
+  const upAndNotActive = oldScrollY > newScrollY && !navVisible.value
+  const downAndActive = oldScrollY <= newScrollY && navVisible.value
+  const scrollDiff = Math.abs(oldScrollY - newScrollY)
+
   // Hitung jarak scroll untuk menampilkan/menyembunyikan Navbar
-  if (oldScrollY > newScrollY && !navVisible.value
-      || (oldScrollY <= newScrollY && navVisible.value)) {
-    scrollAmount.value += Math.abs(oldScrollY - newScrollY)
+  if ((upAndNotActive || downAndActive)
+      && scrollY.value > 0 && scrollDiff <= 400 ) {
+    scrollAmount.value += scrollDiff 
   } else {
     scrollAmount.value = 0
   }
@@ -37,6 +41,9 @@ watch(scrollY, (newScrollY, oldScrollY) => {
   // Tampilkan/sembunyikan Navbar setelah jarak scroll 400
   if (scrollAmount.value >= 400) {
     navVisible.value = !navVisible.value
+  } else if (scrollY.value <= 0) {
+    scrollAmount.value = 0
+    navVisible.value = true
   }
 })
 </script>

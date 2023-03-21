@@ -26,6 +26,7 @@ useHead({
     <div class="mx-auto max-w-5xl px-4 py-4 md:py-16">
       <div class="flex flex-col md:flex-row gap-6">
         <ProjectBCard v-for="(project, index) in projects" :key="index"
+          :slug="project.slug"
           :image="project.image"
           :title="project.title"
           :description="project.moreDescription"
